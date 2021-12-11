@@ -1,0 +1,87 @@
+Хүчинтэй хугацаа/жил/:  <Flex flexDirection="column" w="100%" justifyContent="left">
+                <Text mb="6px">Овог:</Text>
+
+                <Input
+                  size="sm"
+                  onChange={formik.handleChange}
+                  values={formik.values.lastname}
+                  type="text"
+                  name="lastname"
+                  variant="filled"
+                  id="lastname"
+                  placeholder="Овог"
+                />
+              </Flex>
+
+              <Flex flexDirection="column" w="100%" justifyContent="left">
+                <Text mb="6px">Нэр:</Text>
+                <Input
+                  size="sm"
+                  onChange={formik.handleChange}
+                  values={formik.values.firstname}
+                  type="text"
+                  name="firstname"
+                  variant="filled"
+                  id="firstname"
+                  placeholder="Нэр"
+                />
+              </Flex>
+
+              <Flex flexDirection="column" w="100%" justifyContent="left">
+                <Text mb="6px">Утас:</Text>
+
+                <Input
+                  size="sm"
+                  onChange={formik.handleChange}
+                  values={formik.values.phone}
+                  type="number"
+                  name="phone"
+                  variant="filled"
+                  id="phone"
+                  placeholder="Утас"
+                />
+              </Flex>
+
+              <Flex flexDirection="column" w="100%" justifyContent="left">
+                <Text mb="6px">Хаяг:</Text>
+
+                <Input
+                  size="sm"
+                  onChange={formik.handleChange}
+                  values={formik.values.address}
+                  type="text"
+                  name="address"
+                  variant="filled"
+                  id="address"
+                  placeholder="Хаяг"
+                />
+              </Flex>
+
+              <Flex flexDirection="column" w="100%" justifyContent="left">
+                <Text mb="6px">Гэрээ хийсэн огноо:</Text>
+
+                <Flex flexDir="row" alignItems="center">
+                  <Icon as={FaRegCalendarAlt} mr={1} />
+                  <DatePicker
+                    className={
+                      colorMode === "dark" ? "darkModeDate" : "datePicker"
+                    }
+                    selected={startDate}
+                    onChange={(date) => setStartDate(date)}
+                  />
+                </Flex>
+              </Flex>
+
+              <Flex flexDirection="column" w="100%" justifyContent="left">
+                <Text mb="6px">Хүчинтэй хугацаа/жил/:</Text>
+
+                <Input
+                  size="sm"
+                  onChange={formik.handleChange}
+                  value={formik.values.year}
+                  type="number"
+                  name="year"
+                  variant="filled"
+                  id="year"
+                />
+              </Flex>

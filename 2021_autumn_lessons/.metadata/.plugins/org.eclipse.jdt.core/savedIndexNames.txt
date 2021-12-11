@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+/home/temuujin/Documents/2021_autumn_lessons/.metadata/.plugins/org.eclipse.jdt.core
+2778622337.index
+646308851.index
